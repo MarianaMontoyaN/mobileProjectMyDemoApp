@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.mydemo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testImplementation 'junit:junit:4.13.2'
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '3.6.12'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.6.12'
+    testImplementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '3.6.12'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '3.6.12'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    implementation group: 'io.appium', name: 'java-client', version: '8.3.0'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+}

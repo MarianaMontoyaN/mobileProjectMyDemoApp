@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Account creation" skipped="0" tests="1" time="117.29" timestamp="2023-05-23 09:29:02"><testcase name="Successful purchase"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.0', revision: '267030adea'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [f69da876-8e07-41f0-8baa-95819d012289, findElement {using=xpath, value=//android.widget.EditText[@content-desc=&quot;Zip Code* input field&quot;]}]&#10;Capabilities {appium:app: C:\certificados\MyDemoApp.apk, appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\certificados\MyDemoApp.apk, automationName: uiautomator2, deviceName: AndroidEmulator, hub: http://localhost:4723/wd/hub, newCommandTimeout: 1000, platformName: android, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:hub: http://localhost:4723/wd/hub, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 1000, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: f69da876-8e07-41f0-8baa-95819d012289" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f69da876-8e07-41f0-8baa-95819d012289, findElement {using=xpath, value=//android.widget.EditText[@content-desc="Zip Code* input field"]}]
+Capabilities {appium:app: C:\certificados\MyDemoApp.apk, appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\certificados\MyDemoApp.apk, automationName: uiautomator2, deviceName: AndroidEmulator, hub: http://localhost:4723/wd/hub, newCommandTimeout: 1000, platformName: android, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:hub: http://localhost:4723/wd/hub, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 1000, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f69da876-8e07-41f0-8baa-95819d012289</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f69da876-8e07-41f0-8baa-95819d012289, findElement {using=xpath, value=//android.widget.EditText[@content-desc="Zip Code* input field"]}]
+Capabilities {appium:app: C:\certificados\MyDemoApp.apk, appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\certificados\MyDemoApp.apk, automationName: uiautomator2, deviceName: AndroidEmulator, hub: http://localhost:4723/wd/hub, newCommandTimeout: 1000, platformName: android, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:hub: http://localhost:4723/wd/hub, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 1000, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f69da876-8e07-41f0-8baa-95819d012289&#13;
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)&#13;
+com.mydemo.tasks.SendShippingInformation.performAs(SendShippingInformation.java:16)&#13;
+com.mydemo.steps.ItemsPurchaseStep.makeThePayment(ItemsPurchaseStep.java:43)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:56)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>
