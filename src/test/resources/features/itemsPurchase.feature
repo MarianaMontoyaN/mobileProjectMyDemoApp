@@ -9,4 +9,4 @@ Feature: Account creation
       | Sauce Labs Backpack     |
       | Sauce Labs Bolt T-Shirt |
     And make the payment
-    #Then the purchase is successful
+    Then the purchase is successful

@@ -4,6 +4,7 @@ import com.mydemo.utils.enums.Products;
 import io.appium.java_client.AppiumBy;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
 import java.util.ArrayList;
@@ -16,9 +17,13 @@ import static com.mydemo.utils.Utility.transformToEnumName;
 
 public class AddProduct implements Task {
 
-     private List<String> items = new ArrayList<String>();
-    public AddProduct(List items){
+     private List<String> items = new ArrayList<>();
+    public AddProduct(List<String> items){
         this.items = items;
+    }
+
+    public static AddProduct toShoppingCart(List<String> items) {
+        return Tasks.instrumented(AddProduct.class, items);
     }
 
     @Override

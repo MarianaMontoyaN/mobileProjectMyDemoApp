@@ -1,6 +1,8 @@
 package com.mydemo.ui;
 
-public class ProductsView {
+import net.thucydides.core.pages.PageObject;
 
-    public static String PRODUCT = "(//android.widget.TextView[@content-desc=\"store item text\"])[%s]";
+public class ProductsView extends PageObject {
+
+    public static final String PRODUCT = "(//android.widget.TextView[@content-desc=\"store item text\"])[%s]";
 }

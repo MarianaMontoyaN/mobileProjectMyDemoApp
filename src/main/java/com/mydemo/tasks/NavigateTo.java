@@ -16,13 +16,12 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class NavigateTo implements Task {
 
-    static List<Target> path = new ArrayList<Target>();
+    static List<Target> path = new ArrayList<>();
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        //path.forEach(Click::on);
-        for(int i=0;i<path.size(); i++){
-            actor.attemptsTo(Click.on(path.get(i)));
+        for (Target target : path) {
+            actor.attemptsTo(Click.on(target));
         }
         path.clear();
     }

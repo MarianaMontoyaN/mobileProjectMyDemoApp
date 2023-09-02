@@ -20,5 +20,9 @@ dependencies {
     implementation group: 'io.appium', name: 'java-client', version: '8.3.0'
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
+}
 
+test {
+    systemProperty 'serenity.outputDirectory', 'ruta/directorio/reportes' // Ruta donde se generarán los reportes
+    systemProperty 'serenity.take.screenshots', 'FOR_FAILURES' // Configuración de captura de pantallas
 }
